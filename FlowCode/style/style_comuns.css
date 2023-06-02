@@ -25,7 +25,8 @@ body{
 }
 
 .gridItem:nth-child(1){
-    background: rgb(255, 140, 0);
+    background-image: url(../images/fundo_laranja.jpeg);
+    background-repeat: no-repeat;
     grid-row: 1/-1;
 }
 
@@ -36,16 +37,13 @@ body{
     color: black;
 }
 
-.space-1{
-    background-image: url(.images/fundo_laranja.png);
-}
-
 .space-1 img{
     width: 100%;
     height: 200px;
 }
 
 .space-2 h1{
+    font-size: 38px;
     margin-top: 54px;
     margin-bottom: 70px;
     text-align: center;
@@ -58,9 +56,15 @@ body{
     color: #022873;
 }
 
+.space-1 img{
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 80%;
+}
+
 p{
     color: #FFFFFF;
-    padding: 20px;
+    text-align: center;
 }
 
 fieldset {
@@ -69,7 +73,6 @@ fieldset {
     border-color: transparent;
     height: 140px;
 }
-
 
 label{
     display: block;
@@ -86,6 +89,7 @@ form{
 }
 
 #email, #password{
+    margin-top: 15px;
     margin-bottom: 30px;
     background: #BFBFBF;
     width: 350px;
@@ -95,6 +99,7 @@ form{
 }
 
 #email::placeholder{
+    font-size: 16px;
     color: #FFFFFF;
     padding: 10px;
 }
