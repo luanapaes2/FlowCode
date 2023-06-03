@@ -43,9 +43,9 @@ body{
 }
 
 .space-2 h1{
-    font-size: 38px;
+    font-size: 35px;
+    margin-bottom: 50px;
     margin-top: 54px;
-    margin-bottom: 70px;
     text-align: center;
     color: #022873;
 }
@@ -75,6 +75,7 @@ fieldset {
 }
 
 label{
+    width: 100%;
     display: block;
     margin-bottom: 5px;
     color: #888888;
@@ -89,10 +90,10 @@ form{
 }
 
 #email, #password{
-    margin-top: 15px;
     margin-bottom: 30px;
     background: #BFBFBF;
-    width: 350px;
+    width: 100%; /* Altere para usar uma porcentagem ou vw */
+    max-width: 350px; /* Adicione um limite máximo para evitar que fiquem muito grandes */
     height: 35px;
     border: 2px solid #8B949E;
     border-radius: 6px;
@@ -109,9 +110,57 @@ a{
     padding-left: 140px;
     color: #022873;
     font-weight: bold;
+    font-size: 12px;
 }
 
-.remember{
+input[type="checkbox"]{
+    margin-bottom: 35px;
+}
+
+/*.remember{
     font-size: 40px;
     color: #022873;
+}*/
+
+.btn-entrar{
+    margin: 0 auto;
+    display: block;
+    width: 133px;
+    height: 39px;
+    background: #F19F06;
+    border: none;
+    border-radius: 6px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+
+/*.hr-separator {
+    margin-top: 160px;
+    width: 55%;
+}
+
+.hr-separator::after{
+    width: 150px;
+    padding: 0 0 0 15px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 433px;
+    left: 790px;
+    content: "Entre ou crie com";
+}
+*/
+
+/* min-width */
+
+
+@media screen and (max-width: 120em) {
+    a{
+        margin-left: 140px; 
+    }
+}
+
+@media screen and (min-width: 40em) {
+    a{
+        padding-left: 10px; 
+    }
 }
