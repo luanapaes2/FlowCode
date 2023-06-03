@@ -104,12 +104,14 @@ form{
     padding: 10px;
 }
 
-#remember, a{
+a{
+    text-decoration: none;
+    padding-left: 140px;
     color: #022873;
     font-weight: bold;
 }
 
-a{
-    text-decoration: none;
-    padding-left: 140px;
+.remember{
+    font-size: 40px;
+    color: #022873;
 }
