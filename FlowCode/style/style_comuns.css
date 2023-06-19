@@ -45,7 +45,7 @@ body{
 .space-2 h1{
     font-size: 35px;
     margin-bottom: 50px;
-    margin-top: 54px;
+    margin-top: 44px;
     text-align: center;
     color: #022873;
 }
@@ -151,7 +151,55 @@ input[type="checkbox"]{
 */
 
 /* min-width */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .outher_login {
+    margin-top: 25vh;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .outher_login p {
+    color: black;
+  }
+  
+  .outher_login hr {
+    width: 450px;
+    margin-bottom: 30px;
+  }
 
+  .outher_login hr::after{
+    content: "Crie ou entre com";
+    position: absolute;
+    top: -2px;
+    left: 390px;
+    color: #888888;
+    background-color: #FFFFFF;
+    width: 140px;
+    padding: 0 15px;
+  }
+
+  .google-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4285F4;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .google-button i {
+    margin-right: 5px;
+  }
+  
 
 @media screen and (max-width: 120em) {
     a{
