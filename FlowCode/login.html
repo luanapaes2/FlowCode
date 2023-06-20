@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="pt-br">
     <head>
@@ -9,7 +8,7 @@
         <meta name="keywords" content="html5, tecnologia">
         <script src="https://kit.fontawesome.com/0f251f1c56.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="style/style_comuns.css">
+        <link rel="stylesheet" href="style/styles_comuns.css">
     </head>
     <body>
         <div class="gridContainer">
@@ -33,27 +32,28 @@
     
                         <label for="password">Senha
                             <a href="">Esqueceu a senha?</a>
-                            <input type="password" name="password" id="password">
+                            <input type="password" id="password" name="password" placeholder="Digite sua senha" required><span class="password-toggle"></span>
+                            <span class="password-toggle"></span>
                         </label>
 
                         <input type="checkbox" name="remember" id="remember">Lembrar de mim
 
-                        <button type="submit" class="btn-entrar">Entrar</button>
+                        <button type="submit" class="btn-entrar btn-hover">Entrar</button>
                     </form>
                 </fieldset>
+                <!--hr-separator -->
 
                 <div class="container outher_login">
                    <hr>
                    <button class="google-button">
-                    <img src="" alt="">
-                    Entrar com Google
+                    <img src="./images/iconeGoogle.png" alt="">Google
                   </button>
                   
-                    <p>Não tem uma conta ainda? Clique no butão e cadastre-se <button type="button" class="btn-cadastre">cadastre-se</button></p>
+                    <p>Não tem uma conta ainda? Clique no butão e cadastre-se <button type="button" class="btn-cadastre btn-hover">cadastre-se</button></p>
                 </div>
 
-                <!--<hr class="hr-separator"> -->
             </div>
         </div>
+        <script src="./pass.js"></script>
     </body>
 </html>
