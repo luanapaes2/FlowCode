@@ -10,4 +10,9 @@ function togglePasswordVisibility() {
       passwordToggle.style.backgroundImage = "url('/images/visibility_FILL0_wght400_GRAD0_opsz48.png)";
     }
   }
+
+
+function Cadastrar() {
+  window.location = "cadastro.html";
+}
   

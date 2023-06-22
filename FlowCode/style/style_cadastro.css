@@ -1,0 +1,19 @@
+.pass-min{
+    margin-top: -15px;
+}
+
+
+input[type="checkbox"]{
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+
+.outher_login {
+    margin-top: 45vh;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.link-enter{
+    color: #730202;
+}

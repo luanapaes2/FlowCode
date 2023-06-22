@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Cadastre-se</title>
+        <meta charset="utf-8">
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="keywords" content="html5, tecnologia">
+        <script src="https://kit.fontawesome.com/0f251f1c56.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="/FlowCode/style/style_comuns.css">
+        <link rel="stylesheet" href="/FlowCode/style/style_cadastro.css">
+</head>
+<body>
+    <div class="gridContainer">
+        <div class="gridItem space-1">
+            <img src="../images/FlowCode3.png" alt="">
+
+            <h1>Bem-Vindo!</h1>
+
+            <p>Entre em sua conta e tenha uma nova experiência 
+                de aprendizagem a lógica de programação.</p>
+        </div>
+
+        <div class="gridItem space-2">
+            <h1>Entre e crie sua conta</h1>
+
+            <fieldset>
+                <form action="">
+                    <label for="username">Nome do usuário
+                        <input type="text" name="username" id="username">
+                    </label>
+
+                    <label for="email">E-mail profissional
+                        <input type="email" name="email" id="email" placeholder="user@gmail.com">
+                    </label>
+
+                    <label for="password">Senha
+                        <input type="password" id="password" name="password" placeholder="Digite sua senha" required><span class="password-toggle"></span>
+                        <p class="pass-min">no mínimo 6 caracteries</p>
+                        <span class="password-toggle"></span>
+                    </label>
+
+                    <input type="checkbox" name="remember" id="remember">Lembrar de mim
+
+                    <button type="submit" class="btn-entrar btn-hover">Entrar</button>
+                </form>
+            </fieldset>
+            <!--hr-separator -->
+
+            <div class="container outher_login">
+               <hr>
+               <button class="google-button">
+                <img src="../images/iconeGoogle.png" alt="">Google
+              </button>
+              
+                <p class="link-enter">Não tem uma conta ainda? <a href="login.html">Entre aqui</a></p>
+            </div>
+
+        </div>
+    </div>
+    <script src="../javaScript/pass.js"></script>
+</body>
+</html>
