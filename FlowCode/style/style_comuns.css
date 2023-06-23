@@ -82,7 +82,7 @@ label{
 
 form{
     background-color: transparent;
-    width: 45%;
+    width: 50%;
     height: 40vh;
     margin: 0 auto;
 }
@@ -95,7 +95,7 @@ form{
     outline: none;
     padding-left: 15px;
     width: 100%; /* Altere para usar uma porcentagem ou vw */
-    max-width: 350px; /* Adicione um limite máximo para evitar que fiquem muito grandes */
+    max-width: 450px; /* Adicione um limite máximo para evitar que fiquem muito grandes */
     height: 35px;
     border: 2px solid #8B949E;
     border-radius: 6px;
@@ -117,7 +117,7 @@ form{
 
 label a{
     text-decoration: none;
-    margin-left: 160px;
+    margin-left: 200px;
     color: #022873;
     font-weight: bold;
     font-size: 12px;
@@ -153,7 +153,7 @@ input[type="checkbox"]{
  
 .olho {
     cursor: pointer;
-    left: 300px;
+    left: 350px;
     top: 30px;
     position: absolute;
     width: 40px;
@@ -185,6 +185,8 @@ input[type="checkbox"]{
   }
   
   .outher_login hr {
+    background-color: #022873;
+    height: 1.2px;
     width: 450px;
     margin-bottom: 30px;
   }

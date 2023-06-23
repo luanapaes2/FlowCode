@@ -2,8 +2,19 @@
     grid-template-rows: 100vh; /* respectivos valores da altura de cada linha*/
 }
 
+
 .text-forget{
     color: #022873;
     font-weight: bold;
     text-align: center
+}
+
+.text-forget a:visited{
+    color: #730259;
+}
+
+.btn-entrar{
+    margin-top: 30px;
+    width: 260px;
+    height: 33px;
 }

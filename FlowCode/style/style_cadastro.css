@@ -22,7 +22,7 @@ input[type="checkbox"]{
     color: #022873;
 }
 
-#politicas{
+.politicas{
     width: 650px;
     text-align: center;
 }
