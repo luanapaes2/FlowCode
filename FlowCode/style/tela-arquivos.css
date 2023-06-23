@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.gridContainer{
+    width: 100%;
+    height: 100%;
+    background: #bdbdd6;
+}
+
+.gridItem{
+    background: #999;
+    font-size: 2em;
+}
+.gridItem:nth-child(even){
+    background: #999;
+    color: white;
+}
+.gridItem:nth-child(odd){
+    background: #eee;
+}
+/*GRID*/
+.gridContainer{
+    display: grid;      
+    grid-template-columns: 100px repeat(2, 1fr) ; 
+    grid-template-rows: 140px 130px 100vh; 
+
+}
+
+.gridItem:nth-child(1){
+    background: #EAEAEA;
+    grid-row: 1/2; /*linha*/ 
+    grid-column: 1/4; /*coluna*/ 
+}
+
+.gridItem:nth-child(2){
+    background: #BFBFBF;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+}
+
+.gridItem:nth-child(3){
+    color: black;
+    background: rgb(201, 117, 246);
+    grid-column: 1/-1;
+}
+
+.navBar{
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 50px black;
+}
+
+.navBar p{
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+    color: #022873;
+}
+
+.hamburguer{
+   margin-left: 60px;
+   color: #022873;
+}
+
+.user{
+    margin: 0 40px;
+}

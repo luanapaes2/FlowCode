@@ -12,8 +12,11 @@ document.getElementById('pass').type = 'password';
 });
 
 
-
 function Cadastrar() {
   window.location = "cadastro.html";
+}
+
+function Entrar() {
+  window.location = "tela-arquivos.html";
 }
   
