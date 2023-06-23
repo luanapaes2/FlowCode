@@ -87,10 +87,13 @@ form{
     margin: 0 auto;
 }
 
-#email, #password, #username{
+#email, #pass, #username{
     margin-top: 10px;
     margin-bottom: 15px;
     background: #BFBFBF;
+    border: none;
+    outline: none;
+    padding-left: 15px;
     width: 100%; /* Altere para usar uma porcentagem ou vw */
     max-width: 350px; /* Adicione um limite máximo para evitar que fiquem muito grandes */
     height: 35px;
@@ -98,7 +101,7 @@ form{
     border-radius: 6px;
 }
 
-#email::placeholder , #password::placeholder{
+#email::placeholder , #pass::placeholder{
     font-size: 16px;
     color: #FFFFFF;
     padding: 10px;
@@ -136,24 +139,18 @@ input[type="checkbox"]{
     text-transform: uppercase;
 }
 
-.password-toggle {
-    position: absolute;
-    top: 49%;
-    right: 310px;
-    transform: translateY(-50%);
-    width: 25px;
-    height: 25px;
-    background-image: url("/images/visibility_off_FILL0_wght400_GRAD0_opsz48.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+.pass{
+    position: relative;
+}
+
+  
+.olho {
     cursor: pointer;
+    left: 300px;
+    top: 30px;
+    position: absolute;
+    width: 40px;
 }
-
-.password-toggle:active {
-    background-image: url("/images/visibility_FILL0_wght400_GRAD0_opsz48.png");
-}
-
 
 .btn-hover:hover{
     cursor: pointer;

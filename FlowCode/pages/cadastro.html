@@ -35,28 +35,30 @@
                         <input type="email" name="email" id="email" placeholder="user@gmail.com">
                     </label>
 
-                    <label for="password">Senha
-                        <input type="password" id="password" name="password" placeholder="Digite sua senha" required><span class="password-toggle"></span>
-                        <p class="pass-min">no mínimo 6 caracteries</p>
-                        <span class="password-toggle"></span>
+                    <label for="pass" class="pass">Senha
+                        <a href="">Esqueceu a senha?</a>
+                        <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho" class="olho">
+                        <input type="password" id="pass" name="password" placeholder="Digite sua senha"required>
                     </label>
 
                     <input type="checkbox" name="remember" id="remember">Lembrar de mim
 
-                    <button type="submit" class="btn-entrar btn-hover">Entrar</button>
+                    <button type="submit" class="btn-entrar btn-hover" id="create">Criar conta</button>
                 </form>
             </fieldset>
+
             <!--hr-separator -->
-
             <div class="container outher_login">
-               <hr>
-               <button class="google-button">
-                <img src="../images/iconeGoogle.png" alt="">Google
-              </button>
+                <hr>
+                <button class="google-button">
+                    <img src="../images/iconeGoogle.png" alt="">Google
+                </button>
               
-                <p class="link-enter">Não tem uma conta ainda? <a href="login.html">Entre aqui</a></p>
+                <p id="enter">Não tem uma conta ainda? <a href="login.html">Entre aqui</a></p>
+                <p id="politicas">Ao se registrar, você concorda com nossos Termos de Serviço e você reconhece
+                     que leu e entendeu nossa Política de Privacidade.
+                </p>
             </div>
-
         </div>
     </div>
     <script src="../javaScript/pass.js"></script>

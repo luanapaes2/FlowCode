@@ -1,15 +1,16 @@
-function togglePasswordVisibility() {
-    var passwordInput = document.getElementById("password");
-    var passwordToggle = document.querySelector(".password-toggle");
-  
-    if (passwordInput.type === "password") {
-      password.setAtribute("type", "text");
-      passwordToggle.style.backgroundImage = "url('/images/visibility_off_FILL0_wght400_GRAD0_opsz48.pn')";
-    } else {
-      passwordInput.type = "password";
-      passwordToggle.style.backgroundImage = "url('/images/visibility_FILL0_wght400_GRAD0_opsz48.png)";
-    }
-  }
+document.getElementById('olho').addEventListener('mousedown', function() {
+document.getElementById('pass').type = 'text';
+});
+
+document.getElementById('olho').addEventListener('mouseup', function() {
+document.getElementById('pass').type = 'password';
+});
+
+// Para que o password não fique exposto apos mover a imagem.
+document.getElementById('olho').addEventListener('mousemove', function() {
+document.getElementById('pass').type = 'password';
+});
+
 
 
 function Cadastrar() {

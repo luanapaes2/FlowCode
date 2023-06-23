@@ -14,6 +14,26 @@ input[type="checkbox"]{
     position: relative;
 }
 
-.link-enter{
-    color: #730202;
+#enter{
+    color: #022873;
+}
+
+#enter a:visited{
+    color: #022873;
+}
+
+#politicas{
+    width: 650px;
+    text-align: center;
+}
+
+#create{
+    text-transform: none;
+}
+
+.outher_login hr::after{
+    content: "ou continuar com";
+    width: 145px;
+    left: 385px;
+    padding-left: 25px;
 }
