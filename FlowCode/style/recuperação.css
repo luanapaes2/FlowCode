@@ -1,0 +1,9 @@
+.gridContainer{
+    grid-template-rows: 100vh; /* respectivos valores da altura de cada linha*/
+}
+
+.text-forget{
+    color: #022873;
+    font-weight: bold;
+    text-align: center
+}

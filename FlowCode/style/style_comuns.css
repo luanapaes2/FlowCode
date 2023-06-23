@@ -107,6 +107,14 @@ form{
     padding: 10px;
 }
 
+#text-rec{
+    margin-bottom: 80px;
+    text-align: center;
+    color: #888888;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 label a{
     text-decoration: none;
     margin-left: 160px;
@@ -142,8 +150,7 @@ input[type="checkbox"]{
 .pass{
     position: relative;
 }
-
-  
+ 
 .olho {
     cursor: pointer;
     left: 300px;
