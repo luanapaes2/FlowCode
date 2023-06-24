@@ -14,14 +14,62 @@
 <body>
     <div class="gridContainer">
         <div class="gridItem navBar">
-            <i class="fas fa-bars hamburguer"></i>
+            <div class="sidebar">
+                <!-- Conteúdo do menu lateral -->
+                <button>Home</button>
+                <button>Quem Somos</button>
+                <button>Dúvidas</button>
+              </div>
+              
+              <i class="fas fa-bars hamburguer"></i>
+   
             <p >Encontre seus arquivos</p>
             <i class="fas fa-search lupa"></i>
             <i class="far fa-user-circle user"></i>
         </div>
-        <div class="gridItem">2</div>
-        <div class="gridItem">3</div>
-    </div>
 
+        <div class="gridItem">
+            <button class="btn-header diagram">
+                <i class="fas fa-project-diagram"></i>
+                Fluxograma
+            </button>
+
+            <button class="btn-header fold"><i class="fas fa-folder"></i>Pasta de Arquivos</button>
+        </div>
+
+        <div class="gridItem">
+            <div class="label-group">
+                <label class="label filtro" for="categoria">Filtro:
+                    <select class="select" id="categoria>
+                                <optionvalue="">Filtro</option>
+                                <option selected disabled value="">Todos os arquivos</option>
+                                <option>Arquivos PDF</option>
+                                <option>Diagramas</option>
+                                <option>Arquivos PDF</option>
+                                <option>Diagrama</option>
+                    </select>
+                </label>
+    
+                <label class="label ordenar" for="categoria">Ordenar: 
+                    <select class="select" id="categoria>
+                                <optionvalue="">Ordenar</option>
+                                <option selected disabled value="">Último modificado</option>
+                                <option>Mais recente</option>
+                                <option>Mais antigo</option>
+                                <option>Mais recente</option>
+                                <option>Mais antigo</option>
+                    </select>
+                </label>
+
+                <label for="fileInput" class="custom-button"><i class="fas fa-folder-plus"></i>Carregar arquivo</label>
+                <input type="file" id="fileInput" name="fileInput">
+            </div>
+            
+            <div class="hr-wrapper">
+                <hr>
+            </div>
+        </div>
+    </div>
+    <script src="../javaScript/pass.js"></script>
 </body>
 </html>

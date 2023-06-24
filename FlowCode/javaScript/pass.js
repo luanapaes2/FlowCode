@@ -19,4 +19,17 @@ function Cadastrar() {
 function Entrar() {
   window.location = "tela-arquivos.html";
 }
+
+const hamburguerIcon = document.querySelector('.hamburguer');
+const sidebar = document.querySelector('.sidebar');
+
+hamburguerIcon.addEventListener('click', () => {
+  sidebar.classList.toggle('show');
+});
+
+
+
+
+
+
   
