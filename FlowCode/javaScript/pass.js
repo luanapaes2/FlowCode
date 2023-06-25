@@ -27,6 +27,12 @@ hamburguerIcon.addEventListener('click', () => {
   sidebar.classList.toggle('show');
 });
 
+function changeColor(button) {
+  button.classList.toggle("selected");
+}
+
+
+
 
 
 

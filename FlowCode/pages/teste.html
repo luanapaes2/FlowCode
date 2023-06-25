@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Botões Coloridos</title>
+    <style>
+        .btn {
+            width: 100px;
+            height: 40px;
+            margin-bottom: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn.btn1 {
+            background-color: red;
+        }
+
+        .btn.btn2 {
+            background-color: blue;
+        }
+
+        .btn.btn3 {
+            background-color: green;
+        }
+
+        .selected {
+            background-color: yellow !important;
+        }
+
+    </style>
+</head>
+<body>
+    <button class="btn btn1" onclick="changeColor(this)">Botão 1</button>
+    <button class="btn btn2" onclick="changeColor(this)">Botão 2</button>
+    <button class="btn btn3" onclick="changeColor(this)">Botão 3</button>
+
+    <script>
+        function changeColor(button) {
+            button.classList.toggle("selected");
+        }
+    </script>
+</body>
+</html>

@@ -9,7 +9,7 @@ body {
 .gridContainer {
   display: grid;
   grid-template-columns: 100px repeat(2, 1fr);
-  grid-template-rows: 200px 190px 80vh;
+  grid-template-rows: 200px 190px auto;
   width: 100%;
   height: 100%;
   background: #bdbdd6;
@@ -188,7 +188,7 @@ input[type="file"] {
 /*Grid Arquivos*/
 
 .gridContainerArquivos {
-  background-color: red;
+
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -202,7 +202,7 @@ input[type="file"] {
   width: 500px;
   height: 300px;
   margin: 20px;
-  box-shadow: (0px 4px 8px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background: #FFFFFF;
   border-radius: 5px;
 }
@@ -216,11 +216,51 @@ input[type="file"] {
   font-size: 15px;
   line-height: 18px;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-around;
+  align-items: center;
   letter-spacing: 0.02em;
 
   color: #000000;
 }
 
+.diagram-caption{
+  margin-left: 20px;
+  margin-right: 25px;
+}
 
+.title{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 210px;
+}
+
+h1, p{
+  margin: 0;
+}
+
+h1{
+  font-size: 15px;
+}
+
+p{
+ font-size: 11px;
+ font-weight: lighter;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-around;
+  width: 60px;
+  font-size: 20px;
+}
+
+.btnStar {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.selected {
+  color: yellow ;
+}
