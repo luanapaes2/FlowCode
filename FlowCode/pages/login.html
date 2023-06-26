@@ -33,24 +33,24 @@
                         <label for="pass" class="pass">Senha
                             <a href="recuperar-senha.html">Esqueceu a senha?</a>
                             <img src="https://cdn0.iconfinder.com/data/icons/ui-icons-pack/100/ui-icon-pack-14-512.png" id="olho" class="olho">
-                            <input type="password" id="pass" name="password" placeholder="Digite sua senha"required>
+                            <input type="password" id="pass" name="password" placeholder="Digite sua senha">
                         </label>
 
                         <input type="checkbox" name="remember" id="remember">Lembrar de mim
-
-                        <button type="submit" class="btn-entrar btn-hover" onclick="Entrar();">Entrar</button>
+                        <!-- colocar type=submit de volta -->
+                        <button type="button" class="btn-entrar btn-hover" onclick="Entrar()">Entrar</button>
                     </form>
                 </fieldset>
                 <!--hr-separator -->
 
                 <div class="container outher_login">
-                   <hr>
-                   <button class="google-button">
+                    <hr>
+                    <button class="google-button">
                     <img src="../images/iconeGoogle.png" alt="">Google
-                  </button>
+                    </button>
                   
                     <p>Não tem uma conta ainda? Clique no butão e cadastre-se 
-                        <button type="button" class="btn-cadastre btn-hover" onclick="Cadastrar()">cadastre-se
+                        <button type="button" class="btn-cadastre btn-hover" onclick="BtnCadastrar()">cadastre-se
                         </button>
                     </p>
                 </div>

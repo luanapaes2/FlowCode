@@ -101,7 +101,7 @@ form{
     border-radius: 6px;
 }
 
-#email::placeholder , #pass::placeholder{
+#email::placeholder , #pass::placeholder, #username::placeholder{
     font-size: 16px;
     color: #FFFFFF;
     padding: 10px;
@@ -171,14 +171,11 @@ input[type="checkbox"]{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-}
-  
-.outher_login {
     margin-top: 30.5vh;
     margin-bottom: 20px;
     position: relative;
 }
-  
+
   .outher_login p {
     color: #888888;
     font-weight: bold;

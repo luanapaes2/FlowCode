@@ -1,3 +1,11 @@
+function BtnCadastrar() {
+  window.location = "cadastro.html";
+}
+
+function Entrar() {
+  window.location.href = "tela-arquivos.html";
+}
+
 document.getElementById('olho').addEventListener('mousedown', function() {
 document.getElementById('pass').type = 'text';
 });
@@ -12,13 +20,6 @@ document.getElementById('pass').type = 'password';
 });
 
 
-function Cadastrar() {
-  window.location = "cadastro.html";
-}
-
-function Entrar() {
-  window.location = "tela-arquivos.html";
-}
 
 //abre hamburguer
 const hamburguerIcon = document.querySelector('.hamburguer');
@@ -50,12 +51,3 @@ document.addEventListener("DOMContentLoaded", function() {
       options.style.display = "none"; // Fecha o menu quando qualquer área fora do menu é clicada
   });
 });
-
-
-
-
-
-
-
-
-  
