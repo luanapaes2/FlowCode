@@ -1,57 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <script src="https://kit.fontawesome.com/0f251f1c56.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../style/style_comuns.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/0f251f1c56.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../style/style_comuns.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <style>
-        .containerSidebar{
-            width: 295px;
-            height: 100%;
-           
-            padding-top: 40px;
-        }
-        .user{
-            display: flex;
-            border-bottom: 2px solid #525252;
-        }
+      .containerSidebar {
+        width: 295px;
+        height: 100%;
 
-        .user .far{
-            display: flex;
-            align-items: center;
-            border: none;
-            padding-left: 40px;
-            padding-right: 10px;
-            font-size: 30px;
-        }
+        padding-top: 40px;
+      }
+      .user {
+        display: flex;
+        border-bottom: 1px solid #525252;
+      }
 
-        .user p{
-            font-weight: bold;
-            font-size: 25px;
-            color: #022873;
-        }
+      .user .far {
+        display: flex;
+        align-items: center;
+        border: none;
+        padding-left: 40px;
+        padding-right: 10px;
+        font-size: 30px;
+      }
 
-        .file{
-            border-bottom: 0;
-        }
+      .p-user {
+        font-weight: bold;
+        font-size: 25px;
+        color: #022873;
+      }
+
+      .file {
+        border-bottom: 0;
+      }
+
+      .p-file {
+        font-weight: lighter;
+        font-size: 20px;
+        color: #888888;
+      }
+
+      .btn-newfile {
+        margin: 30px auto 10px;
+        width: 180px;
+        height: 40px;
+        background: #ffffff;
+        border: 1px solid #000000;
+        border-radius: 8px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.02em;
+
+        color: #000000;
+      }
+
+      .fa-plus{
+        font-weight: normal;
+      }
+
+      .bottom{
+        border-bottom: 1px solid #525252;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="containerSidebar">
-        <div class="user">
-            <i class="far fa-user-circle user"></i>
-            <p>Usarname</p>
-        </div>
-        <div class="user file">
-            <i class="far fa-clock"></i>
-            <p>Recentes</p>
+      <div class="user">
+        <i class="far fa-user-circle user"></i>
+        <p class="p-user">Usarname</p>
+      </div>
 
-            <i class="far fa-file-alt"></i>
-            <p>Meus arquivos</p>
-        </div>
+      <div class="user file">
+        <i class="far fa-clock"></i>
+        <p class="p-file">Recentes</p>
+      </div>
+
+      <div class="user file">
+        <i class="far fa-file-alt"></i>
+        <p class="p-file um">Meus arquivos</p>
+      </div>
+
+      <div class="user file bottom">
+        <button class="btn-newfile">
+          <i class="fas fa-plus"></i>Novo Arquivo
+        </button>
+      </div>
+
     </div>
-</body>
+  </body>
 </html>
