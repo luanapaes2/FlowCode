@@ -1,0 +1,49 @@
+.containerSidebar{
+    width: 295px;
+    height: 100%;
+    border: 2px solid red;
+}
+
+.user{
+    background-color: transparent;
+    border: none;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-user-circle{
+    margin-left: 40px;
+    font-size: 40px;
+}
+
+.p-user{
+    font-size: 25px;
+    font-weight: bold;
+    color: #022873;
+    margin-left: 15px;
+}
+
+/*botoes de arquivos*/
+.file {
+    display: flex;
+    flex-direction: column;
+}
+
+.file .files {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 200px;
+    background-color: transparent;
+    border: none;
+}
+
+.file .files i {
+    margin-left: 40px;
+    margin-right: 10px;
+    font-size: 40px;
+}
+
+
+
