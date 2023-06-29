@@ -262,6 +262,16 @@ p{
   font-size: 20px;
 }
 
+.fa-star:hover{
+  color: rgb(221, 221, 4);
+  transition: color .3s ease;
+}
+
+.fa-ellipsis-v:hover{
+  color: #022873;
+  transition: color .3s ease;
+}
+
 .selected {
   color: yellow ;
 }
