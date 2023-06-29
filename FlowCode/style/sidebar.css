@@ -1,49 +1,109 @@
-.containerSidebar{
-    width: 295px;
-    height: 100%;
-    border: 2px solid red;
+.containerSidebar {
+  width: 295px;
+  height: 100%;
+  border: 2px solid red;
 }
 
-.user{
-    background-color: transparent;
-    border: none;
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
+.user {
+  background-color: transparent;
+  border: none;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
 }
 
-.fa-user-circle{
-    margin-left: 40px;
-    font-size: 40px;
+.fa-user-circle {
+  margin-left: 40px;
+  font-size: 40px;
 }
 
-.p-user{
-    font-size: 25px;
-    font-weight: bold;
-    color: #022873;
-    margin-left: 15px;
+.p-user {
+  font-size: 25px;
+  font-weight: bold;
+  color: #022873;
+  margin-left: 15px;
 }
 
 /*botoes de arquivos*/
 .file {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .file .files {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    width: 200px;
-    background-color: transparent;
-    border: none;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  width: 300px;
+  background-color: transparent;
+  border: none;
 }
 
 .file .files i {
-    margin-left: 40px;
-    margin-right: 10px;
-    font-size: 40px;
+  margin-left: 40px;
+  margin-right: 10px;
+  font-size: 40px;
 }
 
+.p-file {
+  font-weight: lighter;
+  font-size: 20px;
+  color: #888888;
+  margin-left: 15px;
+}
 
+.fa-clock {
+  margin: 15px 0 10px;
+}
 
+.btn-new {
+  /*btn-newfile*/
+  background: #ffffff;
+  border: 1.8px solid #000000;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  margin: 25px auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  width: 180px;
+  height: 40px;
+}
+
+.btn-new p{
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.fa-plus {
+  margin-right: 8px;
+}
+
+/*arquivos favoritos*/
+.label-group{
+    margin-left: 40px;
+    margin-top: 30px;
+    height: 200px;
+}
+
+.label-group select{
+    color: #888888;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+.label-group p{
+    width: 220px;
+    font-weight: lighter;
+    font-size: 18px;
+    text-align: left;
+}
+
+/**/
