@@ -1,6 +1,6 @@
 .containerSidebar {
   width: 295px;
-  height: 100%;
+  height: auto;
   border: 2px solid red;
 }
 
@@ -56,8 +56,7 @@
   margin: 15px 0 10px;
 }
 
-.btn-new {
-  /*btn-newfile*/
+.btn-newfile, .btn-newsquad {
   background: #ffffff;
   border: 1.8px solid #000000;
   border-radius: 8px;
@@ -67,18 +66,21 @@
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #000000;
-  margin: 25px auto 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px;
-  width: 180px;
   height: 40px;
 }
 
-.btn-new p{
-    font-weight: normal;
-    font-size: 18px;
+.btn-newfile{
+    width: 180px;
+    margin: 25px auto 20px;
+}
+
+.btn-new p {
+  font-weight: normal;
+  font-size: 18px;
 }
 
 .fa-plus {
@@ -86,27 +88,45 @@
 }
 
 /*arquivos favoritos*/
-.label-group{
-    margin-left: 40px;
-    margin-top: 30px;
-    height: 200px;
+.label-group {
+  margin-left: 40px;
+  margin-top: 30px;
+  height: 200px;
 }
 
-.label-group select{
-    color: #888888;
-    font-size: 20px;
-    font-weight: bold;
-    border: none;
+.label-group select {
+  color: #888888;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
 }
 
-.label-group p{
-    width: 220px;
-    font-weight: lighter;
-    font-size: 18px;
-    text-align: left;
+.label-group p {
+  width: 220px;
+  font-weight: lighter;
+  font-size: 18px;
+  text-align: left;
 }
 
 /*Equipes*/
-.btn-squad{
-    width: 220px;
+.btn-newsquad {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding: 5px;
+  margin-top: 100px;
+}
+
+/*Lixeira*/
+.lixeira{
+    height: 300px;
+}
+
+.lixeira img{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
 }
