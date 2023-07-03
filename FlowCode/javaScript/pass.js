@@ -22,12 +22,7 @@ document.getElementById('pass').type = 'password';
 
 
 //abre hamburguer
-const hamburguerIcon = document.querySelector('.hamburguer');
-const sidebar = document.querySelector('.sidebar');
-
-hamburguerIcon.addEventListener('click', () => {
-  sidebar.classList.toggle('show');
-});
+//------------ adicionar função do sidebar
 
 //muda a cor da estrela
 function changeColor(button) {
