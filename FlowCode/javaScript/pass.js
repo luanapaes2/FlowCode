@@ -22,7 +22,7 @@ document.getElementById('pass').type = 'password';
 
 
 //abre hamburguer
-//------------ adicionar função do sidebar
+//---- adicionar função do sidebar
 
 //muda a cor da estrela
 function changeColor(button) {

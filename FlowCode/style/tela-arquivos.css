@@ -48,7 +48,7 @@ body {
   box-shadow: 0 0 50px black;
 }
 
-.navBar p {
+.p-navbar {
   margin: 0 auto;
   font-size: 30px;
   font-weight: bold;
@@ -235,7 +235,7 @@ input[type="file"] {
   margin-right: 230px;
 }
 
-h1, p{
+h1, .p-title{
   margin: 0;
 }
 
@@ -243,7 +243,7 @@ h1{
   font-size: 15px;
 }
 
-p{
+.p-title{
  font-size: 11px;
  font-weight: lighter;
 }
