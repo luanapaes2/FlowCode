@@ -1,30 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <title>Seus arquivos</title>
-        <meta charset="utf-8">
-        <meta name="author" content="">
-        <meta name="description" content="">
-        <meta name="keywords" content="html5, tecnologia">
-        <script src="https://kit.fontawesome.com/0f251f1c56.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <link rel="stylesheet" href="/FlowCode/style/tela-arquivos.css">
+    <meta charset="utf-8">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="keywords" content="html5, tecnologia">
+    <script src="https://kit.fontawesome.com/0f251f1c56.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/FlowCode/style/tela-arquivos.css">
+    <link rel="stylesheet" href="../style/sidebar.css">
 
-        
+
 </head>
+
 <body>
     <div class="gridContainer">
         <div class="gridItem navBar">
-            <div class="sidebar">
-                <!--conteúdo sidbar-->
+            <div class="containerSidebar sidebar" id="sidebar">
+                <button class="close-btn" id="closeBtn" onclick="fecharSidebar();"><i
+                        class="far fa-times-circle"></i></button>
+                <button type="button" class="user">
+                    <i class="far fa-user-circle"></i>
+                    <p class="p-user">Usarname</p>
+                </button>
+                <hr>
+
+                <div class="file">
+                    <button type="button" class="files">
+                        <i class="far fa-clock"></i>
+                        <p class="p-file">Recentes</p>
+                    </button>
+
+                    <button type="button" class="files">
+                        <i class="far fa-file-alt"></i>
+                        <p class="p-file">Meus Arquivos</p>
+                    </button>
+
+                    <button type="button" class="btn-newfile"><!--btn-newfile-->
+                        <i class="far fa-plus"></i>
+                        <p>Novo arquivo</p>
+                    </button>
+                </div>
+                <hr>
+
+                <div>
+                    <div class="label-group-sidebar">
+                        <select class="select-sidebar" id="favoritos>
+                            <option value="">favoritos</option>
+                            <option selected disabled value="" class=" option-sidebar">Arquivos favoritos
+                            </option>
+                            <option class="option-sidebar">favoritos</option>
+                        </select>
+                        <i class=" far fa-star"></i>
+                        <p class="p-sidebar">Clique na estrela embaixo do seu projeto
+                            para adicionar aqui
+                        </p>
+                    </div>
+                    <hr>
+
+                    <div class="label-group-sidebar">
+                        <select class="select-sidebar" id="equipes>
+                            <option value="">equipes</option>
+                            <option selected disabled value="" class=" option-sidebar">Equipes</option>
+                            <option class="option-sidebar">equipes</option>
+                        </select>
+                        <i class=" fas fa-users"></i>
+                        <button type="button" class="btn-newsquad"><!--btn-newsquad-->
+                            <i class="far fa-plus"></i>
+                            <p class="p-sidebar">Crie uma nova equipe</p>
+                        </button>
+                    </div>
+                    <hr>
+
+                    <div class="file  lixeira">
+                        <button type="button" class="files">
+                            <i class="far fa-trash-alt"></i>
+                            <p class="p-lixeira">Lixeira</p>
+                        </button>
+                    </div>
+                    <hr>
+
+                    <div class="file img">
+                        <img src="../images/logoSemFundo (2).png" alt="">
+                    </div>
+
+                </div>
             </div>
-              
-            <i class="fas fa-bars hamburguer"></i>
-   
+            <button class="open-btn" id="openBtn" onclick="abrirSidebar();"><i
+                    class="fas fa-bars hamburguer"></i></button>
             <p class="p-navbar">Encontre seus arquivos</p>
             <i class="fas fa-search lupa"></i>
             <i class="far fa-user-circle user"></i>
         </div>
+
 
         <div class="gridItem">
             <button class="btn-header diagram">
@@ -40,7 +110,7 @@
 
         <div class="gridItem">
             <div class="label-group">
-                <label class="label filtro" for="categoria">Filtro:
+                <label class="label-page filtro" for="categoria">Filtro:
                     <select class="select" id="categoria>
                         <optionvalue="">Filtro</option>
                         <option selected disabled value="">Todos os arquivos</option>
@@ -51,8 +121,8 @@
                     </select>
                 </label>
     
-                <label class="label ordenar" for="categoria">Ordenar: 
-                    <select class="select" id="categoria>
+                <label class=" label-page ordenar" for="categoria">Ordenar:
+                        <select class="select" id="categoria>
                         <optionvalue="">Ordenar</option>
                         <option selected disabled value="">Último modificado</option>
                         <option>Mais recente</option>
@@ -62,12 +132,15 @@
                     </select>
                 </label>
 
-                <label for="fileInput" class="custom-button"><i class="fas fa-folder-plus"></i>Carregar arquivo</label>
+                <label for=" fileInput" class="custom-button">
+                            <i class="fas fa-folder-plus"></i>
+                            Carregar arquivo
+                </label>
                 <input type="file" id="fileInput" name="fileInput">
             </div>
-            
+
             <div class="hr-wrapper">
-                <hr>
+                <hr class="hr-page">
             </div>
 
             <div class="gridContainerArquivos" id="listaAarquivos">
@@ -79,7 +152,8 @@
                             <p class="p-title">editado há 2min</p>
                         </div>
                         <div class="icons">
-                            <button class="btnStar" onclick="changeColor(this)"><i class="far fa-star icon-caption"></i></button>
+                            <button class="btnStar" onclick="changeColor(this)"><i
+                                    class="far fa-star icon-caption"></i></button>
                             <i class="fas fa-ellipsis-v icon-caption btnOptions">
                                 <div class="options">
                                     <button class="option optUm">
@@ -101,7 +175,8 @@
                             <p class="p-title">editado há 2min</p>
                         </div>
                         <div class="icons">
-                            <button class="btnStar" onclick="changeColor(this)"><i class="far fa-star icon-caption"></i></button>
+                            <button class="btnStar" onclick="changeColor(this)"><i
+                                    class="far fa-star icon-caption"></i></button>
                             <i class="fas fa-ellipsis-v icon-caption btnOptions">
                                 <div class="options">
                                     <button class="option optUm">
@@ -123,7 +198,8 @@
                             <p class="p-title">editado há 2min</p>
                         </div>
                         <div class="icons">
-                            <button class="btnStar" onclick="changeColor(this)"><i class="far fa-star icon-caption"></i></button>
+                            <button class="btnStar" onclick="changeColor(this)"><i
+                                    class="far fa-star icon-caption"></i></button>
                             <i class="fas fa-ellipsis-v icon-caption btnOptions">
                                 <div class="options">
                                     <button class="option optUm">
@@ -145,12 +221,13 @@
                             <p class="p-title">editado há 2min</p>
                         </div>
                         <div class="icons">
-                            <button class="btnStar" onclick="changeColor(this)"><i class="far fa-star icon-caption"></i></button>
+                            <button class="btnStar" onclick="changeColor(this)"><i
+                                    class="far fa-star icon-caption"></i></button>
                             <i class="fas fa-ellipsis-v icon-caption btnOptions">
                                 <div class="options">
                                     <button class="option optUm">
                                         <i class="fas fa-trash-alt"></i>Excluir
-                                     </button>
+                                    </button>
                                     <button class="option">
                                         <i class="fas fa-info-circle"></i>Detalhes
                                     </button>
@@ -167,7 +244,8 @@
                             <p class="p-title">editado há 2min</p>
                         </div>
                         <div class="icons">
-                            <button class="btnStar" onclick="changeColor(this)"><i class="far fa-star icon-caption"></i></button>
+                            <button class="btnStar" onclick="changeColor(this)"><i
+                                    class="far fa-star icon-caption"></i></button>
                             <i class="fas fa-ellipsis-v icon-caption btnOptions">
                                 <div class="options">
                                     <button class="option optUm">
@@ -186,4 +264,5 @@
     </div>
     <script src="../javaScript/pass.js"></script>
 </body>
+
 </html>

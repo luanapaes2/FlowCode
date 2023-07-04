@@ -2,6 +2,7 @@
   width: 295px;
   height: auto;
   border: 2px solid #777676a4;
+  position: relative;
 }
 
 .user {
@@ -13,7 +14,6 @@
 }
 
 .fa-user-circle {
-  margin-left: 40px;
   font-size: 40px;
 }
 
@@ -88,20 +88,19 @@
 }
 
 /*arquivos favoritos*/
-.label-group {
-  margin-left: 40px;
+.label-group-sidebar {
   margin-top: 30px;
   height: 200px;
 }
 
-.label-group select {
-  color: #888888;
-  font-size: 20px;
+.select-sidebar {
+  background: transparent;
+  border: 0;
+  font-size: 15px;
   font-weight: bold;
-  border: none;
 }
 
-.label-group p {
+.p-sidebar {
   width: 220px;
   font-weight: lighter;
   font-size: 18px;
@@ -171,3 +170,35 @@
 .p-lixeira:hover{
   color: #ad0303;
 }
+
+/*Outras formatações sidebar*/
+.sidebar {
+  position: absolute;
+  left: -300px;
+}
+
+.content {
+  padding: 20px;
+  position: absolute;
+  left: 200px;
+  width: 100px;
+}
+
+.open-btn {
+  display: block;
+  margin-bottom: 20px;
+  margin-left: 150px;
+}
+
+.close-btn {
+  margin-left: 255px;
+  margin-top: 5px;
+  color: #070707;
+  background-color: transparent;
+  width: 0;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Adicione o restante do seu CSS abaixo */
