@@ -139,7 +139,7 @@ body {
   color: #888888;
 }
 
-select {
+.select {
   background: #f6f6f6;
   border: 0;
   font-size: 15px;
