@@ -178,9 +178,7 @@ input[type="file"] {
 }
 
 /*Grid Arquivos*/
-
 .gridContainerArquivos {
-
   margin: 0 auto;
   padding: 20px;
   display: flex;
@@ -210,7 +208,6 @@ input[type="file"] {
   display: flex;
   align-items: center;
   letter-spacing: 0.02em;
-
   color: #000000;
 }
 
