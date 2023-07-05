@@ -24,24 +24,10 @@ body {
   background: #02287394;
   grid-row: 1/2; /*linha*/
   grid-column: 1/4; /*coluna*/
-  perspective: 1000px;
-  position: relative;
-}
-
-.gridItem:nth-child(1)::after { /*adicionando sombra*/
-  content: "";
-  position: absolute;
-  bottom: -3px; 
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background: rgba(131, 131, 131, 0.5);
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+  perspective: 9000px;
+  box-shadow: 0px 0px 6px rgba(2, 2, 2, 0.992);
   transform-origin: bottom;
-  transform: rotateX(30deg); 
 }
-
-
 
 .gridItem:nth-child(2) {
   display: flex;
