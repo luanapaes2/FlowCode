@@ -21,7 +21,7 @@
             <div class="containerSidebar sidebar" id="sidebar">
                 <button class="close-btn" id="closeBtn" onclick="fecharSidebar();"><i
                         class="far fa-times-circle"></i></button>
-                <button type="button" class="user">
+                <button type="button" class="user-sidebar">
                     <i class="far fa-user-circle"></i>
                     <p class="p-user">Usarname</p>
                 </button>
@@ -69,14 +69,14 @@
                         <i class=" fas fa-users"></i>
                         <button type="button" class="btn-newsquad"><!--btn-newsquad-->
                             <i class="far fa-plus"></i>
-                            <p class="p-sidebar">Crie uma nova equipe</p>
+                            <p>Crie uma nova equipe</p>
                         </button>
                     </div>
                     <hr>
 
                     <div class="file  lixeira">
                         <button type="button" class="files">
-                            <i class="far fa-trash-alt"></i>
+                            <i class="far fa-trash-alt lix-sidebar"></i>
                             <p class="p-lixeira">Lixeira</p>
                         </button>
                     </div>
@@ -89,10 +89,11 @@
                 </div>
             </div>
             <button class="open-btn" id="openBtn" onclick="abrirSidebar();"><i
-                    class="fas fa-bars hamburguer"></i></button>
+                    class="fas fa-bars hamburguer"></i>
+            </button>
             <p class="p-navbar">Encontre seus arquivos</p>
-            <i class="fas fa-search lupa"></i>
-            <i class="far fa-user-circle user"></i>
+            <i class="fas fa-search lupa" onclick=""></i>
+            <i class="fas fa-user-circle user"></i>
         </div>
 
 
@@ -132,9 +133,9 @@
                     </select>
                 </label>
 
-                <label for=" fileInput" class="custom-button">
-                            <i class="fas fa-folder-plus"></i>
-                            Carregar arquivo
+                <label for="fileInput" class="custom-button">
+                    <i class="fas fa-folder-plus"></i>
+                    Carregar arquivo
                 </label>
                 <input type="file" id="fileInput" name="fileInput">
             </div>

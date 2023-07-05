@@ -21,7 +21,7 @@ body {
 }
 
 .gridItem:nth-child(1) {
-  background: #eaeaea;
+  background: #02287394;
   grid-row: 1/2; /*linha*/
   grid-column: 1/4; /*coluna*/
 }
@@ -31,7 +31,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background: #bfbfbf;
+  background: #EAEAEA;
   grid-row: 2/3;
   grid-column: 1/-1;
 }
@@ -48,39 +48,31 @@ body {
   box-shadow: 0 0 50px black;
 }
 
+.user{
+  margin: 0 60px;
+}
+
+.lupa, .user{
+  color: #FFFFFF;
+
+}
+
 .p-navbar {
   margin: 0 auto;
   font-size: 30px;
   font-weight: bold;
-  color: #022873;
+  color: #FFFFFF;
 }
 
-.hamburguer {
-  margin-left: 60px;
-  color: #022873;
+.fa-bars {
+  color: #FFFFFF;
+  font-size: 30px;
 }
 
-.hamburguer:hover{
+.hamburguer:hover, .lupa:hover, .user:hover{
     cursor: pointer;
-    color: #012f8b;
-}
-/*-- lateral quando o hamburguer abrir --*/
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100vh;
-    background-color: #f1f1f1;
-    transition: left 0.3s ease;
-  }
-  
-  .show {
-    left: 0;
-  }
-
-.user {
-  margin: 0 40px;
+    color: #c9c3f7;
+    transition: color .6s ease-in-out;
 }
 
 /*Item 2 - header*/

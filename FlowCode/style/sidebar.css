@@ -5,7 +5,7 @@
   position: relative;
 }
 
-.user {
+.user-sidebar {
   background-color: transparent;
   border: none;
   margin-top: 10px;
@@ -22,6 +22,24 @@
   font-weight: bold;
   color: #022873;
   margin-left: 15px;
+}
+/*-- lateral quando o hamburguer abrir --*/
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -10px;
+  width: 300px;
+  height: auto;
+  background-color: #f1f1f1;
+  transition: left 0.3s ease;
+  }
+  
+.show {
+  left: 0;
+}
+
+.user-sidebar {
+  margin: 0 40px;
 }
 
 /*botoes de arquivos*/
@@ -74,8 +92,8 @@
 }
 
 .btn-newfile{
-    width: 180px;
-    margin: 25px auto 20px;
+  width: 180px;
+  margin: 25px auto 20px;
 }
 
 .btn-new p {
@@ -83,7 +101,7 @@
   font-size: 18px;
 }
 
-.fa-plus {
+.btn-newfile .fa-plus {
   margin-right: 8px;
 }
 
@@ -96,42 +114,60 @@
 .select-sidebar {
   background: transparent;
   border: 0;
-  font-size: 15px;
+  font-size: 20px;
+  color: #888888;
   font-weight: bold;
+  margin-left: 40px;
+}
+
+.label-group-sidebar i{
+  font-size: 15px;
 }
 
 .p-sidebar {
   width: 220px;
   font-weight: lighter;
   font-size: 18px;
+  color: #888888;
   text-align: left;
+  margin-left: 40px;
 }
 
 /*Equipes*/
 .btn-newsquad {
-  width: 220px;
+  width: 230px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding: 5px;
-  margin-top: 100px;
+  margin: 100px auto;
+}
+
+.btn-newsquad p {
+font-weight: normal;
+font-size: 18px;
+margin: 0 5px;
+}
+
+.btn-newsquad .fa-plus {
+  margin-left: 8px;
 }
 
 /*Lixeira*/
-.lixeira{
-    height: 50px;
-}
-
 .lixeira {
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: 0 auto 30px;
+  height: 50px;
+}
+
+.lix-sidebar{
+  color: black;
 }
 
 .p-lixeira{
-  color: #661C1C;
+  color: #9f2a2a;
   font-weight: bold;
   font-size: 20px;
   margin-left: 15px;
@@ -145,7 +181,7 @@
 
 .img img{
   width: 200px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 /*Hover - botões*/
@@ -186,8 +222,9 @@
 
 .open-btn {
   display: block;
-  margin-bottom: 20px;
-  margin-left: 150px;
+  margin-left: 100px;
+  background-color: transparent;
+  border: none;
 }
 
 .close-btn {

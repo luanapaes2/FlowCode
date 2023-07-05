@@ -20,7 +20,6 @@ document.getElementById("olho").addEventListener("mousemove", function () {
 });
 
 //abre hamburguer
-
 //abrir sidebar
 function abrirSidebar() {
   const sidebar = document.getElementById("sidebar");
@@ -33,7 +32,7 @@ openBtn.addEventListener("click", abrirSidebar);
 // Fechar sidebar
 function fecharSidebar() {
   const sidebar = document.getElementById("sidebar");
-  sidebar.style.left = "-300px";
+  sidebar.style.left = "-310px";
 }
 
 const closeBtn = document.getElementById("closeBtn");
