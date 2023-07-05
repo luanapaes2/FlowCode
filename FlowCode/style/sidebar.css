@@ -210,8 +210,9 @@ margin: 0 5px;
   background-color:  #4150707f;
 }
 
-.p-lixeira:hover{
+.p-lixeira:hover, .fa-times-circle:hover{
   color: #ad0303;
+  transition: color 0.8s ease;
 }
 
 /*Outras formatações sidebar*/
