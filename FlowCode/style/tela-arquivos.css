@@ -118,14 +118,15 @@ body {
   transition: all 0.6s ease;
 }
 
-/*Item 3 - corpo*/
+/*Item 3 - main*/
 .label-group {
   margin-top: 40px;
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
 }
 
 .label-page {
-  margin-left: 60px;
-  margin-right: 5px;
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
@@ -135,7 +136,7 @@ body {
 
 .select {
   background: #f6f6f6;
-  border: 0;
+  border: none;
   font-size: 15px;
   font-weight: bold;
 }
@@ -145,10 +146,9 @@ input[type="file"] {
 }
 
 .custom-button {
-  margin-left: 500px;
-  padding: 5px 10px;
+  padding: 5px 10px 8px;
   background-color: transparent;
-  height: 30px;
+  height: 20px;
   border: 1px solid black;
   border-radius: 6px;
   font-size: 18px;
@@ -158,6 +158,7 @@ input[type="file"] {
 
 .custom-button:hover {
   background-color: #a6aba7;
+  transition: all .6s ease-in;
 }
 
 .fa-folder-plus {
@@ -166,18 +167,6 @@ input[type="file"] {
 
 .fa-folder-download {
   font-size: 16px;
-}
-
-.hr-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.hr-page {
-  margin-left: 32px;
-  width: 100%;
-  max-width: 1242px; 
 }
 
 /*Grid Arquivos*/
@@ -195,7 +184,7 @@ input[type="file"] {
   width: 500px;
   height: 300px;
   margin: 20px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 2px 20px 5px rgba(0, 0, 0, 0.15);
   background: #FFFFFF;
   border-radius: 5px;
 }
@@ -314,4 +303,11 @@ h1{
 .fa-info-circle{
   margin: 5px;
   color: #022873;
+}
+
+/*Respondividade*/
+@media screen and(max-width: 770px){
+  .navBar{
+    flex-wrap: wrap;
+  }
 }
