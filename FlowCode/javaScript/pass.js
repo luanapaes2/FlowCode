@@ -6,6 +6,7 @@ function Entrar() {
   window.location.href = "tela-arquivos.html";
 }
 
+//visibilidade da senha
 document.getElementById("olho").addEventListener("mousedown", function () {
   document.getElementById("pass").type = "text";
 });
@@ -34,8 +35,7 @@ function fecharSidebar() {
   sidebar.style.left = "-310px";
 }
 
-
-//muda a cor da estrela
+//muda a cor da estrela dos cards quando selecionada
 function changeColor(button) {
   button.classList.toggle("selected");
 }
@@ -57,9 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
     options.style.display = "none"; // Fecha o menu quando qualquer área fora do menu é clicada
   });
 });
-
-
-
 
 //sidebar user
 //abre sidebar hamburguer
