@@ -6,10 +6,22 @@
   overflow-x: scroll;
 }
 
+/*-- lateral quando o hamburguer abrir --*/
+.sidebar {
+  position: absolute;
+  left: -300px;
+  top: 0;
+  right: -20px;
+  width: 300px;
+  height: auto;
+  background-color: #f1f1f1;
+  transition: left 0.3s ease;
+  }
+
 .user-sidebar {
   background-color: transparent;
   border: none;
-  margin-top: 10px;
+  margin: 0 40px;
   display: flex;
   align-items: center;
 }
@@ -23,28 +35,6 @@
   font-weight: bold;
   color: #022873;
   margin-left: 15px;
-}
-/*-- lateral quando o hamburguer abrir --*/
-.sidebar {
-  position: fixed;
-  top: 0;
-  right: -20px;
-  width: 300px;
-  height: auto;
-  background-color: #f1f1f1;
-  transition: left 0.3s ease;
-  }
-  
-.show {
-  left: 0;
-}
-
-.user-sidebar {
-  background-color: transparent;
-  border: none;
-  margin: 0 40px;
-  display: flex;
-  align-items: center;
 }
 
 /*botoes de arquivos*/
@@ -99,11 +89,6 @@
 .btn-newfile{
   width: 180px;
   margin: 25px auto 20px;
-}
-
-.btn-new p {
-  font-weight: normal;
-  font-size: 18px;
 }
 
 .btn-newfile .fa-plus {
@@ -217,11 +202,6 @@ margin: 0 5px;
 }
 
 /*Outras formatações sidebar*/
-.sidebar {
-  position: absolute;
-  left: -300px;
-}
-
 .content {
   padding: 20px;
   position: absolute;
@@ -246,7 +226,5 @@ margin: 0 5px;
   font-size: 25px;
   cursor: pointer;
 }
-
-/*sidebar user*/
 
 
