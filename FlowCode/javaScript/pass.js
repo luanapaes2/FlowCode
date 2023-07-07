@@ -19,8 +19,7 @@ document.getElementById("olho").addEventListener("mousemove", function () {
   document.getElementById("pass").type = "password";
 });
 
-//abre hamburguer
-//abrir sidebar
+//abre sidebar hamburguer
 function abrirSidebar() {
   const sidebar = document.getElementById("sidebar");
   sidebar.style.left = "0";
@@ -34,9 +33,6 @@ function fecharSidebar() {
   const sidebar = document.getElementById("sidebar");
   sidebar.style.left = "-310px";
 }
-
-const closeBtn = document.getElementById("closeBtn");
-closeBtn.addEventListener("click", fecharSidebar);
 
 
 //muda a cor da estrela
@@ -61,3 +57,24 @@ document.addEventListener("DOMContentLoaded", function () {
     options.style.display = "none"; // Fecha o menu quando qualquer área fora do menu é clicada
   });
 });
+
+
+
+
+//sidebar user
+//abre sidebar hamburguer
+function abrirSidebarUser() {
+  const sidebarUser = document.getElementById("sidebar-user");
+  sidebarUser.style.left = "1045px";
+}
+
+const openBtnUser = document.getElementById("openBtnUser");
+openBtnUser.addEventListener("click", abrirSidebarUser);
+
+// Fechar sidebar
+function fecharSidebarUser() {
+  const sidebarUser = document.getElementById("sidebar-user");
+  sidebarUser.style.left = "-310px";
+}
+
+

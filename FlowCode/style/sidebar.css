@@ -3,6 +3,7 @@
   height: auto;
   border: 2px solid #777676a4;
   position: relative;
+  overflow-x: scroll;
 }
 
 .user-sidebar {
@@ -27,7 +28,7 @@
 .sidebar {
   position: fixed;
   top: 0;
-  right: -10px;
+  right: -20px;
   width: 300px;
   height: auto;
   background-color: #f1f1f1;
@@ -245,4 +246,7 @@ margin: 0 5px;
   font-size: 25px;
   cursor: pointer;
 }
+
+/*sidebar user*/
+
 

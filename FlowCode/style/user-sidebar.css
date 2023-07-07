@@ -1,0 +1,127 @@
+.containerSidebar-user {
+    width: 295px;
+    height: auto;
+    border: 2px solid #777676a4;
+    position: relative;
+}
+
+.user-sidebar {
+    background-color: transparent;
+    border: none;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-cog{
+    padding: 7px;
+}
+
+.fa-user-circle, .fa-pencil-alt {
+    font-size: 40px;
+}
+
+.p-sidebar-user {
+    font-size: 25px;
+    font-weight: bold;
+    color: #022873;
+
+}
+
+/*-- lateral quando o hamburguer abrir --*/
+.sidebar-user {
+    width: 300px;
+    height: auto;
+    left: -310px;
+    background-color: #f1f1f1;
+    transition: right 0.2s ease;
+    position: absolute;
+    top: 0;
+}
+
+.user-sidebar {
+    background-color: transparent;
+    border: none;
+    margin: 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+.p-file {
+    font-weight: lighter;
+    font-size: 20px;
+    color: #888888;
+    margin-left: 15px;
+}
+
+.btn-settings {
+    background: #ffffff;
+    border: 1.8px solid #000000;
+    border-radius: 8px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    height: 40px;
+}
+
+.btn-settings {
+    width: 180px;
+    margin: 25px auto 20px;
+}
+
+.p-sidebar-user {
+    font-weight: lighter;
+    font-size: 16px;
+    color: #888888;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.files .user{
+    color: black;
+}
+
+/*Hover - botões*/
+.files:hover {
+    background-color: #dadadadf;
+    width: 100%;
+}
+
+.p-file:hover,
+.label-group select:hover,
+.fa-star:hover,
+.fa-trash:hover {
+    color: #494949;
+}
+
+.estrela-card:hover {
+    color: yellow;
+}
+
+.files:hover,
+.p-file:hover,
+.btn-settings:hover {
+    transition: all 0.8s ease;
+}
+
+.btn-settings:hover {
+    background-color: #4150707f;
+}
+
+/*Outras formatações sidebar*/
+.close-btn-user {
+    margin-top: 5px;
+    color: #070707;
+    background-color: transparent;
+    width: 0;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}

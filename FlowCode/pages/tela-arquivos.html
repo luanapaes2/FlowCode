@@ -11,8 +11,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="/FlowCode/style/tela-arquivos.css">
     <link rel="stylesheet" href="../style/sidebar.css">
-
-
+    <link rel="stylesheet" href="../style/user-sidebar.css">
 </head>
 
 <body>
@@ -48,7 +47,7 @@
 
                 <div>
                     <div class="label-group-sidebar">
-                        <select class="select-sidebar" id="favoritos>
+                        <select class="select-sidebar" id="favoritos">
                             <option value="">favoritos</option>
                             <option selected disabled value="" class=" option-sidebar">Arquivos favoritos
                             </option>
@@ -62,7 +61,7 @@
                     <hr>
 
                     <div class="label-group-sidebar">
-                        <select class="select-sidebar" id="equipes>
+                        <select class="select-sidebar" id="equipes">
                             <option value="">equipes</option>
                             <option selected disabled value="" class=" option-sidebar">Equipes</option>
                             <option class="option-sidebar">equipes</option>
@@ -91,11 +90,33 @@
             </div>
             
             <button class="open-btn" id="openBtn" onclick="abrirSidebar();"><i
-                    class="fas fa-bars hamburguer"></i>
+                class="fas fa-bars hamburguer"></i>
             </button>
+
             <p class="p-navbar">Encontre seus arquivos</p>
             <i class="fas fa-search lupa" onclick=""></i>
-            <i class="fas fa-user-circle user"></i>
+            <i class="far fa-user-circle user" onclick="abrirSidebarUser();"></i>
+            
+            <div class="containerSidebar-user sidebar-user" id="sidebar-user">
+                <button class="close-btn-user" id="closeBtnUser" onclick="fecharSidebarUser();">
+                    <i class="far fa-times-circle"></i>
+                </button>
+        
+                <div class="file">
+                    <button type="button" class="files">
+                        <i class="far fa-user-circle user"></i>
+                        <p class="p-sidebar-user">Usarname</p>
+                    </button>
+                    <button type="button" class="files">
+                        <i class="fas fa-pencil-alt"></i>
+                        <p class="p-sidebar-user">Editar informações de perfil</p>
+                    </button>
+                    <button type="button" class="btn-newfile"><!--btn-newfile-->
+                        <i class="fas fa-cog"></i>
+                        <p>Configurações</p>
+                    </button>
+                </div>
+            </div>
         </div>
 
 
@@ -114,7 +135,7 @@
         <div class="gridItem">
             <div class="label-group">
                 <label class="label-page filtro" for="categoria">Filtro:
-                    <select class="select" id="categoria>
+                    <select class="select" id="categoria">
                         <optionvalue="">Filtro</option>
                         <option selected disabled value="">Todos os arquivos</option>
                         <option>Arquivos PDF</option>
@@ -125,7 +146,7 @@
                 </label>
     
                 <label class=" label-page ordenar" for="categoria">Ordenar:
-                        <select class="select" id="categoria>
+                        <select class="select" id="categoria">
                         <optionvalue="">Ordenar</option>
                         <option selected disabled value="">Último modificado</option>
                         <option>Mais recente</option>
