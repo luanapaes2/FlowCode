@@ -5,41 +5,7 @@
     position: relative;
 }
 
-.user-sidebar {
-    background-color: transparent;
-    border: none;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-}
-
-.fa-cog{
-    padding: 7px;
-}
-
-.fa-user-circle, .fa-pencil-alt {
-    font-size: 40px;
-}
-
-.p-sidebar-user {
-    font-size: 25px;
-    font-weight: bold;
-    color: #022873;
-
-}
-
-/*-- lateral quando o hamburguer abrir --*/
-.sidebar-user {
-    width: 300px;
-    height: auto;
-    left: -310px;
-    background-color: #f1f1f1;
-    transition: right 0.2s ease;
-    position: absolute;
-    top: 0;
-}
-
-.user-sidebar {
+.user-sidebar { /*container*/
     background-color: transparent;
     border: none;
     margin: 0 40px;
@@ -47,11 +13,22 @@
     align-items: center;
 }
 
-.p-file {
+.close-btn-user {
+    margin-top: 5px;
+    color: #070707;
+    background-color: transparent;
+    width: 0;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.p-sidebar-user { /*texto ao lado dos ícones*/
     font-weight: lighter;
-    font-size: 20px;
+    font-size: 16px;
     color: #888888;
-    margin-left: 15px;
+    text-align: left;
+    margin-left: 20px;
 }
 
 .btn-settings {
@@ -69,22 +46,29 @@
     justify-content: center;
     padding: 5px;
     height: 40px;
-}
-
-.btn-settings {
     width: 180px;
     margin: 25px auto 20px;
 }
-
-.p-sidebar-user {
-    font-weight: lighter;
-    font-size: 16px;
-    color: #888888;
-    text-align: left;
-    margin-left: 20px;
+/* lateral quando o hamburguer abrir*/
+.sidebar-user {
+    width: 300px;
+    height: auto;
+    left: -310px;
+    background-color: #f1f1f1;
+    transition: right 0.8s ease;
+    position: absolute;
+    top: 0;
 }
 
-.files .user{
+.fa-cog{
+    padding: 7px;
+}
+
+.fa-user-circle, .fa-pencil-alt {
+    font-size: 40px;
+}
+
+.files .user{ /*mudando cor do icone - deixando preto*/
     color: black;
 }
 
@@ -94,34 +78,16 @@
     width: 100%;
 }
 
-.p-file:hover,
-.label-group select:hover,
-.fa-star:hover,
-.fa-trash:hover {
+.p-sidebar-user:hover {
     color: #494949;
 }
 
-.estrela-card:hover {
-    color: yellow;
-}
-
 .files:hover,
-.p-file:hover,
+.p-sidebar-user:hover,
 .btn-settings:hover {
     transition: all 0.8s ease;
 }
 
 .btn-settings:hover {
     background-color: #4150707f;
-}
-
-/*Outras formatações sidebar*/
-.close-btn-user {
-    margin-top: 5px;
-    color: #070707;
-    background-color: transparent;
-    width: 0;
-    border: none;
-    font-size: 25px;
-    cursor: pointer;
 }
